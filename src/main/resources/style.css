@@ -1,0 +1,168 @@
+.root {
+    -fx-background-color: #09090b;
+    -fx-font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+}
+/* Typography */
+.header-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+}
+.sub-label {
+    -fx-text-fill: #a1a1aa;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+/* Sidebar */
+.sidebar {
+    -fx-background-color: #18181b;
+    -fx-padding: 30 20;
+    -fx-spacing: 12;
+    -fx-border-color: transparent #27272a transparent transparent;
+    -fx-border-width: 1;
+}
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a1a1aa;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-alignment: center-left;
+    -fx-padding: 12 16;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+.sidebar-btn:hover {
+    -fx-background-color: #27272a;
+    -fx-text-fill: #ffffff;
+}
+.sidebar-btn.active {
+    -fx-background-color: #27272a;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(two-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 2);
+}
+/* Content */
+.content-area {
+    -fx-background-color: #09090b;
+    -fx-padding: 40;
+}
+.card {
+    -fx-background-color: #18181b;
+    -fx-background-radius: 12;
+    -fx-padding: 25;
+    -fx-border-color: #27272a;
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+/* Buttons */
+.primary-btn {
+    -fx-background-color: linear-gradient(to right, #2563eb, #3b82f6);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 12 24;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.4), 12, 0, 0, 4);
+}
+.primary-btn:hover {
+    -fx-background-color: linear-gradient(to right, #1d4ed8, #2563eb);
+}
+.danger-btn {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.danger-btn:hover {
+    -fx-background-color: #dc2626;
+}
+.action-btn {
+    -fx-background-color: #27272a;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-padding: 10 18;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-border-color: #3f3f46;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+.action-btn:hover {
+    -fx-background-color: #3f3f46;
+}
+/* Inputs */
+.text-input {
+    -fx-background-color: #09090b;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #52525b;
+    -fx-border-color: #27272a;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 10 12;
+    -fx-font-size: 14px;
+}
+.text-input:focused {
+    -fx-border-color: #3b82f6;
+}
+/* Lists */
+.list-view {
+    -fx-background-color: #09090b;
+    -fx-control-inner-background: #09090b;
+    -fx-border-color: #27272a;
+    -fx-border-radius: 8;
+    -fx-padding: 2;
+}
+.list-cell {
+    -fx-text-fill: #e4e4e7;
+    -fx-padding: 12 15;
+    -fx-font-size: 14px;
+}
+.list-cell:empty {
+    -fx-background-color: #09090b;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #27272a;
+    -fx-text-fill: #3b82f6;
+    -fx-font-weight: bold;
+}
+.list-cell:filled:hover {
+    -fx-background-color: #18181b;
+}
+/* Combo Box */
+.combo-box {
+    -fx-background-color: #09090b;
+    -fx-border-color: #27272a;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.combo-box .list-view {
+    -fx-background-color: #09090b;
+    -fx-border-color: #27272a;
+}
+.combo-box .list-cell {
+    -fx-text-fill: white;
+}
+/* Overlay Premium Look */
+.overlay-card {
+    -fx-background-color: linear-gradient(to bottom right, rgba(30,30,30,0.95), rgba(10,10,10,0.98));
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+}
+.overlay-glow-locked {
+    -fx-effect: dropshadow(three-pass-box, rgba(239, 68, 68, 0.25), 20, 0, 0, 4);
+}
+.overlay-glow-unlocked {
+    -fx-effect: dropshadow(three-pass-box, rgba(34, 197, 94, 0.25), 20, 0, 0, 4);
+}
+.overlay-glow-focus {
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 130, 246, 0.25), 20, 0, 0, 4);
+}
+.overlay-glow-afk {
+    -fx-effect: dropshadow(three-pass-box, rgba(234, 179, 8, 0.25), 20, 0, 0, 4);
+}
