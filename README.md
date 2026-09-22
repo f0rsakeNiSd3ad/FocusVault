@@ -38,3 +38,5 @@ FocusVault is a hardcore blocker designed to actually stop you from getting dist
 ## Privacy Disclaimer
 **100% Offline. 100% Private.**
 FocusVault is completely local to your machine. It requires **no internet connection**, has **no servers**, and **collects absolutely zero data**. Your blocked lists, credits, and habits stay entirely in your own computer's Windows Registry and are never transmitted anywhere.
+
+**Feel free to leave your opinion and suggestions to make the software better**
